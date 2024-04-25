@@ -1,64 +1,125 @@
-/* General reset for HTML elements */
-body, h1, h2, p, ul {
+/* Global Settings */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Orbitron', sans-serif; /* Sci-fi themed font */
+    font-family: 'Arial', sans-serif; /* Modern, clean font */
 }
 
-/* Body and global background settings */
 body {
-    background-color: #0f172a; /* Deep space blue */
-    color: #e0f2fe; /* Light blue for text */
+    background-color: #121212; /* Dark background for sci-fi feel */
+    color: #ffffff;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
-/* Header styles with navigation */
+a {
+    color: #76ff03; /* Neon green for links to pop on the dark background */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #c6ff00; /* Lighter neon for hover effect */
+}
+
+/* Header and Navigation Styles */
 header {
-    background-color: #1e40af; /* Deep blue background */
-    color: #fff;
-    padding: 20px;
+    background: linear-gradient(to right, #0d47a1, #2962ff); /* Blue gradient */
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4); /* Subtle shadow for depth */
 }
 
-/* Navigation menu styling */
-header nav ul {
-    list-style-type: none; /* Removes default list styling */
+header h1 {
+    margin: 0 0 10px;
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
 }
 
-header nav ul li {
-    display: inline; /* Display links in a row */
-    margin-right: 15px;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-header nav ul li a {
-    color: #64b5f6; /* Light blue links */
-    text-decoration: none; /* Removes underline from links */
-}
-
-/* Styling for each section */
+/* Section Styling */
 section {
     padding: 20px;
-    border-bottom: 2px solid #334155; /* Darker line for separation */
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1); /* Subtle white transparent background for content separation */
+    border-left: 5px solid #2962ff; /* Blue border on the left for a modern touch */
+    transition: background-color 0.3s, border-left-color 0.3s; /* Smooth transitions for interactive elements */
 }
 
-/* Footer styling with fixed position at bottom */
+section:hover {
+    background: rgba(255, 255, 255, 0.2); /* Lighter on hover for user feedback */
+    border-left-color: #76ff03; /* Neon green border on hover */
+}
+
+/* Footer Styling */
 footer {
-    background-color: #1d4ed8; /* Vibrant blue */
-    color: #fff;
+    background-color: #0d47a1;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.4); /* Shadow to lift footer off the page */
 }
 
-footer a {
-    color: #fbbf24; /* Bright yellow for contrast and visibility */
+/* Form Styling on Contact Page */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
 }
 
-/* Additional hover effects and transitions for interactive elements */
-a:hover {
-    text-decoration: underline; /* Underline links on hover */
-    color: #dbeafe; /* Lighter blue for hover effect */
+form label {
+    display: block;
+    margin-bottom: 5px;
 }
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #2962ff; /* Matching the header gradient */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0d47a1; /* Darker blue for interaction */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
 
