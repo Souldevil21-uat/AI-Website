@@ -1,0 +1,118 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif; /* Clean and professional font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #0072BB;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styling for the main banner */
+header {
+    background: #48A9A6 url('images/banner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    background: white;
+    margin-top: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0072BB;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 20px;
+    }
+}
+
+/* Customization for buttons (e.g., Read More, Contact Us) */
+button {
+    background-color: #48A9A6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00539C;
+}
+
+/* Typography customization for headings and text */
+h1, h2, h3 {
+    color: #00539C; /* Cohesive color scheme across all headings */
+}
+
+p {
+    font-size: 1.1em; /* Slightly larger text for better readability */
+}
+
+/* Styling for links to make them more noticeable */
+a {
+    color: #0072BB;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #00539C;
+}
